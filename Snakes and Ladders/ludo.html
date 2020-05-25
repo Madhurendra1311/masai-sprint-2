@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>student Details</title>
+        <style type="text/css">
+           .box {
+	
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	border: 1px solid black;
+	vertical-align: top;
+  background-color:orange
+}
+.player {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50px;
+  vertical-align: top;
+}
+.one {
+	background: black;
+  
+}
+.two {
+	background: darkblue;
+}
+.snake {
+	background: red;
+}
+.ladder {
+	background: green;
+}
+.little-text {
+	color: white;
+	font-size: 12.50px;
+  
+}
+        </style>
+    </head>
+    <body>
+		<div id="table"></div>
+		<div class="player-holder">
+			<div>
+				<span>Player 1:</span>
+				<span class="player one"></span>
+				<button onclick="move(0)" id='play0'>Play</button>
+				<span class="player0"></span>
+			</div>
+			<div>
+				<span>Player 2:</span>
+				<span class="player two"></span>
+				<button onclick="move(1)" id='play1' disabled>Play</button>
+				<span class="player1"></span>
+			</div>
+		</div>
+		<div class='button-holder'>
+			<button onclick='reset()'>Reset</button>
+		</div>
+		<script type="text/javascript" src="ludo.js"></script>
+	</body>
+</html>
